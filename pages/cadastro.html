@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cadastro - Laboratory</title>
+    <link rel="stylesheet" href="../css/cadastro.css" />
+  </head>
+  <body>
+    <div class="cabecalho">
+      <a class="link-logo" href="../index.html">
+        <span class="titulo">LABORATORY</span>
+      </a>
+      <div class="menu">
+        <a href="./cadastro-exames.html"><span class="icone">📄</span><span class="texto">NOVO CADASTRO</span></a>
+        <a href="#"><span class="icone">📊</span><span class="texto">RELATÓRIOS</span></a>
+        <a href="#"><span class="icone">⚙️</span><span class="texto">CONFIGURAÇÕES</span></a>
+        <a href="../index.html"><span class="icone">➡️</span><span class="texto">SAIR</span></a>
+      </div>
+    </div>
+
+    <div class="conteudo">
+      <!-- Cabeçalho de dados do atendimento -->
+      <div class="secao-formulario cabecalho-atendimento">
+        <div class="linha-formulario">
+          <div><label>Código Atend.</label><input type="text" /></div>
+          <div><label>Data</label><input type="date" /></div>
+          <div><label>Horário</label><input type="time" /></div>
+          <div><label>Número Ficha</label><input type="text" /></div>
+          <div><label>Usuário</label><input type="text" /></div>
+        </div>
+      </div>
+
+      <!-- Paciente -->
+      <div class="secao-formulario">
+        <div class="linha-titulo">Paciente</div>
+        <div class="linha-formulario">
+          <label>Nome*</label>
+          <input type="text" class="input-grande" />
+          <label>Sexo*</label>
+          <select class="input-pequeno">
+            <option value=""></option>
+            <option value="M">Masculino</option>
+            <option value="F">Feminino</option>
+          </select>
+        </div>
+        <div class="linha-formulario">
+          <label>RG*</label>
+          <input type="text" class="input-medio" />
+          <label>CPF*</label>
+          <input type="text" class="input-medio" />
+        </div>
+        <div class="linha-formulario">
+          <label>Nome do Responsável*</label>
+          <input type="text" class="input-grande" />
+        </div>
+      </div>
+
+      <!-- Endereço/Contato -->
+      <div class="secao-formulario">
+        <div class="linha-titulo">Endereço/Contato</div>
+        <div class="linha-formulario">
+          <label>CEP*</label>
+          <input type="text" class="input-medio" />
+          <label>Endereço*</label>
+          <input type="text" class="input-grande" />
+          <label>Número*</label>
+          <input type="text" class="input-pequeno" />
+        </div>
+        <div class="linha-formulario">
+          <label>Telefone*</label>
+          <input type="text" class="input-medio" />
+          <label>E-mail*</label>
+          <input type="email" class="input-grande" />
+        </div>
+      </div>
+
+      <!-- Médico -->
+      <div class="secao-formulario">
+        <div class="linha-titulo">Médico</div>
+        <div class="linha-formulario">
+          <label>CRM*</label>
+          <input type="text" class="input-medio" />
+          <label>Nome*</label>
+          <input type="text" class="input-grande" />
+        </div>
+      </div>
+    </div>
+
+    <!-- Rodapé -->
+    <footer class="footer">
+      <div class="footer-conteudo">
+        <p><strong>Equipe:</strong> Alpha</p>
+        <p><strong>Nome do Projeto:</strong> Laboratory</p>
+        <p><strong>Integrantes:</strong> Deivid Frank Silva, Elielton Patrick Costa Ramos, Iury Mauricio de Souza, Juliene Cirqueira Antunes, Paulo César Rocha David, Vanessa Cirqueira Oliveira</p>
+        <p><strong>Tema do Sistema:</strong> Sistema para laboratório de análises clínicas</p>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,177 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #fff;
+}
+
+/* ================= CABEÇALHO ================= */
+.cabecalho {
+  background-color: #9b64fb;
+  color: white;
+  padding: 8px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 48px;
+}
+
+.link-logo {
+  all: unset;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.cabecalho .titulo {
+  font-weight: bold;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.menu {
+  display: flex;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+.menu a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-decoration: none;
+}
+
+.menu .icone {
+  font-size: 20px;
+  margin-bottom: 3px;
+}
+
+.menu .texto {
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+/* ================= CONTEÚDO ================= */
+.conteudo {
+  padding: 15px;
+  background: #fff;
+}
+
+.secao-formulario {
+  margin-bottom: 15px;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 10px;
+}
+
+.linha-titulo {
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 8px;
+  color: #000;
+}
+
+/* ================= FORMULÁRIOS ================= */
+.linha-formulario {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 8px;
+  flex-wrap: wrap;
+}
+
+.linha-formulario label {
+  font-size: 12px;
+  font-weight: bold;
+  color: #333;
+  margin-right: 5px;
+  white-space: nowrap;
+}
+
+.linha-formulario input,
+.linha-formulario select {
+  height: 26px;
+  border: 1px solid #bbb;
+  border-radius: 3px;
+  background: linear-gradient(to bottom, #fff, #e6e6e6);
+  font-size: 12px;
+  padding: 2px 5px;
+}
+
+/* Inputs de tamanho */
+.input-grande {
+  flex: 1;
+}
+
+.input-medio {
+  width: 160px;
+}
+
+.input-pequeno {
+  width: 90px;
+}
+
+/* ================= FOOTER ================= */
+.footer {
+  background-color: #f5f5f5;
+  color: #555;
+  font-size: 11px;
+  text-align: center;
+  padding: 10px 20px;
+  border-top: 1px solid #ccc;
+  margin-top: 20px;
+}
+
+.footer-conteudo p {
+  margin: 3px 0;
+}
+
+/* ================= RESPONSIVIDADE ================= */
+@media (max-width: 768px) {
+  /* Menu vira rolagem horizontal */
+  .menu {
+    gap: 15px;
+    overflow-x: auto;
+  }
+
+  /* Labels e inputs em coluna */
+  .linha-formulario {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .linha-formulario label {
+    margin: 0 0 3px 0;
+  }
+
+  .linha-formulario input,
+  .linha-formulario select {
+    width: 100% !important;
+    max-width: 100%;
+  }
+
+  .input-medio,
+  .input-pequeno,
+  .input-grande {
+    width: 100% !important;
+  }
+
+  .linha-titulo {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .cabecalho .titulo {
+    font-size: 14px;
+  }
+
+  .menu .texto {
+    font-size: 10px;
+  }
+
+  .linha-titulo {
+    font-size: 14px;
+  }
+}
